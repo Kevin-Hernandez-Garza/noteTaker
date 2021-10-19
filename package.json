@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Kevin-Hernandez-Garza/noteTaker/issues"
   },
-  "homepage": "https://github.com/Kevin-Hernandez-Garza/noteTaker#readme"
+  "homepage": "https://github.com/Kevin-Hernandez-Garza/noteTaker#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
 }
