@@ -25,7 +25,7 @@ function createNewNote(body, notesArray) {
     notesArray.push(note);
     fs.writeFileSync(
         path.join(__dirname, './db/db.json'),
-        JSON.stringify({notes, notesArray}, null, 2)
+        JSON.stringify({notes: notesArray}, null, 2)
     );
 
     // return finished code to post route for response
