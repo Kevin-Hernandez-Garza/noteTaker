@@ -1,9 +1,9 @@
 // require the express.js module 
 const express = require('express');
-// instantiate the server
-const app = express();
 // environment variable 
 const PORT = process.env.PORT || 3001;
+// instantiate the server
+const app = express();
 // requiring the db data 
 const {notes} = require('./db/db.json');
 
