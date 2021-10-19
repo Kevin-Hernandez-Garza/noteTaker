@@ -61,20 +61,15 @@ app.get('/api/notes', (req,res) => {
 // post request
 app.post('/api/notes', (req,res) => {
     // req.body is where our incoming content will be 
-    // console.log(req.body);
     // adding id to array lesson 11.2.6
 
     if(!validateNote(req.body)) {
         res.status(400).send('The note was not properly submitted!');
     } else {
+        // adding note to json file
         const note = createNewNote(req.body, notes);
         res.json(note);
     }
-
-    // adding note to json file 
-    // const note = createNewNote(req.body, notes);
-
-    // res.json(req.body);
 });
 
 // make the server listen 
