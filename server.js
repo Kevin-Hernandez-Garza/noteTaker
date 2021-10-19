@@ -2,6 +2,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const {nanoid} = require("nanoid")
 // environment variable 
 const PORT = process.env.PORT || 3001;
 // instantiate the server
@@ -22,6 +23,8 @@ function createNewNote(body, notesArray) {
     // console.log(body);
 
     const note = body;
+    // giving each note a unique id
+    note.id = nanoid()
     notesArray.push(note);
     fs.writeFileSync(
         path.join(__dirname, './db/db.json'),
