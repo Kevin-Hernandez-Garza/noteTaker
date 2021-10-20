@@ -2,7 +2,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const {nanoid} = require("nanoid")
+const {nanoid} = require('nanoid');
 // environment variable 
 const PORT = process.env.PORT || 3001;
 // instantiate the server
