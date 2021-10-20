@@ -7,6 +7,8 @@ const {nanoid} = require('nanoid');
 const PORT = process.env.PORT || 3001;
 // instantiate the server
 const app = express();
+// middleware function to also look for other files in the public folder
+app.use(express.static('public'));
 // parse incoming string or array data = middleware function
 // takes incoming POST data and converts it to key/value pairings that can be accessed in the req.body object.
 // the extended:true informs server that there maybe subarray data and it should look deep into the POST data to parse it all correctly
@@ -47,10 +49,7 @@ function validateNote(note) {
     return true;
 }
 
-
-
 /*///////////////////////////////////
-findById() check module 11.1.7 
 watch video in lesson 11.2.4 
 ///////////////////////////////////*/
 
@@ -73,6 +72,11 @@ app.post('/api/notes', (req,res) => {
         const note = createNewNote(req.body, notes);
         res.json(note);
     }
+});
+
+// route to the index.html file 
+app.get('/', (req,res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
 // make the server listen 
