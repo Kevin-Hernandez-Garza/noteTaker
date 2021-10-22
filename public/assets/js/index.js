@@ -37,10 +37,24 @@ const saveNote = (note) =>
   fetch('/api/notes', {
     method: 'POST',
     headers: {
+      // Accept: 'application/json', //added
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(note),
-  });
+  }) 
+    ////////////////////////added
+  // .then(response => {
+  //   if(response.ok) {
+  //     return response.json();
+  //   }
+  //   alert('Error: ' + response.statusText);
+  // })
+  // .then(postResponse => {
+  //   console.log(postResponse);
+  //   alert('Note successfully added!');
+  // })
+    ////////////////////////end
+  ;
 
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
