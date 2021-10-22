@@ -1,5 +1,5 @@
-
-  [
+{
+  "notes": [
     {
       "title": "test v1",
       "text": "it's alive",
@@ -29,6 +29,16 @@
       "title": "test v6",
       "text": "works just how i wanted!",
       "id": "nbmkzPtPMoEmjpVrRveiU"
+    },
+    {
+      "title": "sasa",
+      "text": "asasas",
+      "id": "dgHFAwofUoHg4SUNSI5C4"
+    },
+    {
+      "title": "This is my bby ",
+      "text": "So much 💜",
+      "id": "NwQwkNRZhXf3_KbXfYiez"
     }
   ]
-
+}
