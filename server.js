@@ -49,10 +49,6 @@ function validateNote(note) {
     return true;
 }
 
-/*///////////////////////////////////
-watch video in lesson 11.2.4 
-///////////////////////////////////*/
-
 //adding the get route
 app.get('/api/notes', (req,res) => {
     //the res.send method is used to send short messages
