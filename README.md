@@ -4,8 +4,8 @@
 
 - [License](#license)
 - [Description](#description)
-- [Installation](#installation)
-- [Demo](#demo)
+- [Website](#website)
+- [Built With](#built-with)
 - [Contribution](#contribution)
 - [Contact](#contact-me)
 
@@ -17,19 +17,25 @@ Licensed under the [MIT License](LICENSE)
 
 ## Description
 
--
+- This application called Note Taker allows the user to write and save notes. This application uses Express.js back end, and notes will be saved and received from a JSON file.
 
-## Demo
+## Website
 
-[Watch The Demo]()
+[Note Taker](https://afternoon-lake-52451.herokuapp.com/)
 
-## Installation
+## Built With
 
--
+- JavaScript
+- HTML5
+- CSS3
+- Heroku
+- Insomnia
 
 ## Contribution
 
--
+- Starter Code provided by UT-Austin Bootcamp
+- Google
+- Express.js module
 
 ## Contact Me
 
